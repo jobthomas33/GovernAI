@@ -17,15 +17,6 @@ There is no frontend, authentication, chatbot, data-platform integration, or clo
 
 Python 3.11+, FastAPI, Pydantic, SQLAlchemy 2, Alembic, SQLite/PostgreSQL, pytest.
 
-## Run locally
-
-```powershell
-py -3.12 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -e ".[dev]"
-Copy-Item .env.example .env
-uvicorn app.main:app --reload
-```
 
 The default database is `./governai.db`. A fresh local database is initialized when the application starts. For schema upgrades on an existing database, run:
 
